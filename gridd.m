@@ -1703,8 +1703,8 @@ classdef (Abstract) gridd < handle
         obj = refineMesh(obj,h)
         [sideLength,area] = sideLengthAndArea(obj)
     end
-    methods(Access = private,Static = true)
-        function b = boundaryCondition(q,g,h,r)
+    methods(Access = private)
+        function b = boundaryCondition(obj,q,g,h,r)
             % Defines boundary condition matrix in PDEtool style
             % Syntax:
             % b = obj.boundaryCondition            homogenious Neumann BCs
