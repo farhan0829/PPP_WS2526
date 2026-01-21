@@ -17,7 +17,7 @@ function varargout = run_rd(mode)
 
     switch mode
         case {"gui", "g"}
-            app = Farhan_app_2_cli;
+            app = Simulator_GUI;
             if nargout > 0
                 varargout{1} = app;
             else
